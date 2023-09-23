@@ -11,9 +11,8 @@ class Item:
         Item.instances.append(self)
 
     def label(self):
-        return {"name": self.name, "price": self.price}
+        return {"name": self.name, "pricee": self.price}
 
     @staticmethod
     def item_all():
-        # instancesを返します ==> Item.item_all()でこれまでに生成されたItemインスタンスを全て返すということです。
         return Item.instances
